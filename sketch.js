@@ -62,7 +62,7 @@ function send(user, pass) {
     body: JSON.stringify({
       data: [
         {
-          //pasword: pass,
+          password: pass,
           username: user,
         },
       ],
@@ -158,7 +158,8 @@ function draw() {
     }
   } else if (page === 2) {
     send(data.user, data.pwd);
-    window.location.reload();
+    print('sent');
+    page++;
   }
 
   if (mouseIsPressed) {
