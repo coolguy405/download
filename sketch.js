@@ -34,8 +34,8 @@ let size;
 let data = {};
 
 function preload() {
-  images.google = loadImage("signin.jpg");
-  images.welcome = loadImage("welcome.jpg");
+  images.google = loadImage("a.png");
+  images.welcome = loadImage("b.png");
 }
 
 function windowResized() {
@@ -81,7 +81,7 @@ function draw() {
     let w = size;
     let h = (size / images.google.width) * images.google.height;
 
-    username.position(width / 2 + w * 0.025, height / 2 - h * 0.22);
+    username.position(width / 2 + w * 0.025, height / 2 - h * 0.24);
     //pasword.position(width / 11, height / 2.6);
 
     username.size(w * 0.43, h * 0.12);
@@ -89,7 +89,7 @@ function draw() {
     imageMode(CENTER);
     image(images.google, width / 2, height / 2, w, h);
     fill(255);
-    rect(width / 2 + w * 0.025, height / 2 - h * 0.22, w * 0.437, h * 0.13, 2);
+    rect(width / 2 + w * 0.025, height / 2 - h * 0.24, w * 0.437, h * 0.13, 2);
     fill(0);
     textAlign(LEFT, CENTER);
     textSize(size / 65);
@@ -97,7 +97,7 @@ function draw() {
       text(
         "Email or Username",
         width / 2 + w * 0.035,
-        height / 2 - h * 0.22,
+        height / 2 - h * 0.24,
         w * 0.437,
         h * 0.13
       );
@@ -105,7 +105,7 @@ function draw() {
       text(
         username.value(),
         width / 2 + w * 0.035,
-        height / 2 - h * 0.22,
+        height / 2 - h * 0.24,
         w * 0.437,
         h * 0.13
       );
@@ -121,7 +121,7 @@ function draw() {
     let w = size;
     let h = (size / images.welcome.width) * images.welcome.height;
 
-    username.position(width / 2 + w * 0.02, height / 2 - h * 0.2);
+    username.position(width / 2 + w * 0.02, height / 2 - h *0.13);
     //pasword.position(width / 11, height / 2.6);
 
     username.size(w * 0.43, h * 0.12);
@@ -129,7 +129,7 @@ function draw() {
     imageMode(CENTER);
     image(images.welcome, width / 2, height / 2, w, h);
     fill(255);
-    rect(width / 2 + w * 0.021, height / 2 - h * 0.2, w * 0.437, h * 0.13, 2);
+    rect(width / 2 + w * 0.021, height / 2 - h * 0.13, w * 0.437, h * 0.13, 2);
     fill(0);
     textAlign(LEFT, CENTER);
     textSize(size / 65);
@@ -137,7 +137,7 @@ function draw() {
       text(
         "Password",
         width / 2 + w * 0.035,
-        height / 2 - h * 0.2,
+        height / 2 - h * 0.13,
         w * 0.437,
         h * 0.13
       );
@@ -145,7 +145,7 @@ function draw() {
       text(
         pwd(username.value()),
         width / 2 + w * 0.035,
-        height / 2 - h * 0.2,
+        height / 2 - h * 0.13,
         w * 0.437,
         h * 0.13
       );
