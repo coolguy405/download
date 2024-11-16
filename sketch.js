@@ -81,10 +81,10 @@ function draw() {
     let w = size;
     let h = (size / images.google.width) * images.google.height;
 
-    username.position(width / 2 + w * 0.025, height / 2 - h * 0.24);
+    username.position(width / 2 + w * 0.024, height / 2 - h * 0.24);
     //pasword.position(width / 11, height / 2.6);
 
-    username.size(w * 0.43, h * 0.12);
+    username.size(w * 0.44, h * 0.12);
     //pasword.size(width - width / 5, height / 20);
     imageMode(CENTER);
     image(images.google, width / 2, height / 2, w, h);
@@ -124,7 +124,7 @@ function draw() {
     username.position(width / 2 + w * 0.02, height / 2 - h *0.13);
     //pasword.position(width / 11, height / 2.6);
 
-    username.size(w * 0.43, h * 0.12);
+    username.size(w * 0.44, h * 0.12);
     //pasword.size(width - width / 5, height / 20);
     imageMode(CENTER);
     image(images.welcome, width / 2, height / 2, w, h);
