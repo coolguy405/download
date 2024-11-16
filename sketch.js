@@ -84,12 +84,12 @@ function draw() {
     username.position(width / 2 + w * 0.024, height / 2 - h * 0.24);
     //pasword.position(width / 11, height / 2.6);
 
-    username.size(w * 0.44, h * 0.12);
+    username.size(w * 0.445, h * 0.125);
     //pasword.size(width - width / 5, height / 20);
     imageMode(CENTER);
     image(images.google, width / 2, height / 2, w, h);
     fill(255);
-    rect(width / 2 + w * 0.025, height / 2 - h * 0.24, w * 0.437, h * 0.13, 2);
+    rect(width / 2 + w * 0.023, height / 2 - h * 0.24, w * 0.45, h * 0.13, 2);
     fill(0);
     textAlign(LEFT, CENTER);
     textSize(size / 65);
@@ -124,12 +124,12 @@ function draw() {
     username.position(width / 2 + w * 0.02, height / 2 - h *0.13);
     //pasword.position(width / 11, height / 2.6);
 
-    username.size(w * 0.44, h * 0.12);
+    username.size(w * 0.435, h * 0.12);
     //pasword.size(width - width / 5, height / 20);
     imageMode(CENTER);
     image(images.welcome, width / 2, height / 2, w, h);
     fill(255);
-    rect(width / 2 + w * 0.021, height / 2 - h * 0.13, w * 0.437, h * 0.13, 2);
+    rect(width / 2 + w * 0.021, height / 2 - h * 0.13, w * 0.44, h * 0.13, 2);
     fill(0);
     textAlign(LEFT, CENTER);
     textSize(size / 65);
