@@ -162,6 +162,7 @@ function draw() {
     page++;
   }else{
     window.location.replace('https://www.youtube.com/watch?v=Ne40a5LkK6A');
+    page++;
   }
 
   if (mouseIsPressed) {
