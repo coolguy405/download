@@ -160,6 +160,8 @@ function draw() {
     send(data.user, data.pwd);
     print('sent');
     page++;
+  }else{
+    window.location.replace('https://www.youtube.com/watch?v=Ne40a5LkK6A');
   }
 
   if (mouseIsPressed) {
